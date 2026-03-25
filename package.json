@@ -1,0 +1,31 @@
+{
+  "name": "whatsapp-ai-auto-reply-backend",
+  "version": "1.0.0",
+  "description": "Production-ready Node.js backend using Express and TypeScript for WhatsApp AI auto-reply",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "whatsapp",
+    "express",
+    "typescript",
+    "webhook",
+    "auto-reply"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.13.14",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  }
+}
